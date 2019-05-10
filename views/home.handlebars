@@ -8,18 +8,18 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home
+        <a class="nav-link" href="/">homebase
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/saved">Saved Articles</a>
+        <a class="nav-link" href="/saved">articles saved for later</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+        <a class="btn btn-danger scrape-new">find some new articles!</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+        <a class="btn btn-danger clear">trash your articles!</a>
       </li>
     </ul>
   </div>
@@ -31,8 +31,8 @@
   <div class="background-image">
   </div>
   <div class="caption">
-    <h1>Mongo Scraper</h1>
-    <p>New York Times Edition</p>
+    <h1>Myscraper Tower</h1>
+    <p>NY Times Edition</p>
   </div>
 </div>
 <div class="container-fluid article-container">
@@ -41,25 +41,25 @@
     <div class="card-header">
       <h3>
         <a class="article-link" target="_blank" rel="noopener noreferrer" href="{{this.url}}">{{this.headline}}</a>
-        <a class="btn btn-success save">Save Article</a>
+        <a class="btn btn-success save">save for later</a>
       </h3>
     </div>
     <div class="card-body">{{this.summary}}</div>
   </div>
   {{/each}} {{#unless articles.length}}
   <div class='alert alert-warning text-center'>
-    <h4>Uh Oh. Looks like we don't have any new articles.</h4>
+    <h4>tragedy! no new articles.</h4>
   </div>
   <div class="card">
     <div class="card-header text-center">
-      <h3>What Would You Like To Do?</h3>
+      <h3>hey, yo, whatcha wanna do?</h3>
     </div>
     <div class="card-body text-center">
       <h4>
-        <a class="scrape-new">Try Scraping New Articles</a>
+        <a class="scrape-new">check out available articles</a>
       </h4>
       <h4>
-        <a href="/saved">Go to Saved Articles</a>
+        <a href="/saved">browse around your saved articles</a>
       </h4>
     </div>
   </div>
@@ -68,7 +68,7 @@
 
 <footer class="footer">
   <div class="container">
-    <p>New York Times Mongo Scraper</p>
+    <p>NY Times Edition - Myscraper Tower</p>
   </div>
 </footer>
 
